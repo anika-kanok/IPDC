@@ -1,0 +1,14 @@
+@media(max-width:576){
+    .hero-section{
+        & .container{
+            & .logo{
+                & img{
+
+                }
+            }
+
+
+            
+        }
+    }
+}
