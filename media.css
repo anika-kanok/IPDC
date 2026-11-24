@@ -1,27 +1,286 @@
 @media(max-width:576px){
-    .hero-section{
-        & header{
-           
-            & .logo{
-                & img{
+    .hero-section {
+    background-position: bottom !important;
+    background-size: 100% auto !important;
+    min-height:auto !important ;
 
-                }
+    & header {
+      justify-content: space-around !important;
+      align-items: center;
+
+      & .navber {
+        display: none;
+      }
+    }
+
+    & .cardiv,
+    & .homediv {
+     display: none !important;
+    }
+
+    & .div-banner {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 3rem !important;
+
+      & .banner-text {
+        margin:0 !important;
+        max-width: 100%;
+  
+
+        & h1 {
+          font-size: 2.6rem !important;
+        }
+
+        & div {
+          margin-inline: auto;
+        }
+
+        & .button {
+          flex-direction: column;
+          align-items: start;
+        }
+      }
+
+      & .banner-image {
+        position: static!important;
+        min-height: auto !important;
+        margin-top: 2rem !important;
+      }
+
+      & .frame {
+        position: static !important;
+        margin: 1rem 0 0 0rem !important;
+      }
+    }
+  }
+
+
+  /* customer-exprience section*/
+   & .creating{
+      padding: 0rem 2rem !important;
+      margin: 0;
+        & h1{
+          font-size: 1.2rem !important;
+        }
+
+        & div{
+          font-size: 0.90rem;
+        }
+    }
+
+  .customer-experience{
+    display: flex !important;
+    flex-direction: column !important;
+    margin: 0 auto !important;
+
+  }
+
+
+
+  /* business-partner section start here */
+
+  .business-partner{
+    padding: 2rem 1rem !important;
+     & .more {
+      margin-top: 1rem !important;
+        & .div{
+          flex-direction: column;
+          align-items: center;
+          gap: 0.5rem !important;
+          margin: 0;
+          padding: 0;
+
+        }
+         
+     }
+  }
+ 
+
+
+
+
+  /*ipdc-section start here  */
+  .ipdc-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0;
+
+        & .ipdc-image {
+            width: 100%;
+            min-height: auto !important;
+
+            & img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+
+        & .ipdc-text {
+            width: 100%;
+            margin: 0rem!important;
+            padding: 2rem;
+
+            & h2 {
+                font-size: 0.5rem;
             }
 
-            & .navber{
-                display: none;
+            & p {
+                font-size: 0.4  rem;
+                line-height: 1.6;
             }
 
-
-            
+            & a {
+                font-size: 0.9rem;
+            }
         }
     }
 
 
 
+  /* our-service start here */
+
+  .our-service{
+    min-height: auto;
+    margin: 0;
+    padding: 0;
+     &.creating2{
+      padding-top: 0rem;
+     }
+     & .creating{
+      padding: 0rem 2rem;
+      margin: 0;
+        & h1{
+          font-size: 1.5rem;
+        }
+
+        & div{
+          font-size: 0.90rem;
+        }
+    }
+     & .box-loan {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            padding-top: 0;
+            padding-bottom: 2rem;
+
+            & .box {
+                width: 100%;
+                max-width: 400px;
+                margin: 0 auto;
+
+                & img {
+                    width: 60%;
+                    height: auto;
+                    display: block;
+                     margin: 0 auto;
+                }
+
+                & .box-text {
+                    display: flex;
+                    justify-content: center;
+
+                    & .box-right {
+                        & div {
+                            margin-top: 0.5rem;
+
+                            & p {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+
+                    & .box-left {
+                        padding: 1rem;
+                        & .div{
+                          width: 100%;
+                          height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
+
+   
+  /*result-section start here  */
+
+  .result-section{
+    padding-top:2rem !important;
+
+    & .creating{
+      padding: 0rem 2rem !important;
+      margin: 0;
+        & h1{
+          font-size: 1.5rem;
+        }
+
+        & div{
+          font-size: 0.90rem;
+        }
+    }
+
+& .result-box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 0.5rem;
+        padding: 2rem;
+        margin-bottom: 1rem;
+
+        & .result-card {
+            max-width: 100%;
+
+            & h1 {
+                font-size: 1.5rem;
+            }
+
+            & p {
+                font-size: 0.875rem;
+            }
+        }
+    }
+  }
+
+
+
+
+   /* newsletter-section start here */
+
+.news-letter {
+    min-height: auto;
+    padding: 0rem 2rem;
+    line-height: 1.5;
+
+    & h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    & div {
+        font-size: 0.875rem;
+    }
+
+    & .subscribe {
+        gap: 0.4rem;
+
+        & input[type="email"] {
+            padding: 0.6rem 0.7rem;
+            font-size: 0.875rem;
+        }
+
+        & button {
+            padding: 0.6rem 0.8rem;
+            font-size: 0.875rem;
+        }
+    }
+}
 
 
 
@@ -29,7 +288,7 @@
 
 
     /* footer-section start here */
-    & .footer-section{
+    .footer-section{
         display: flex;
         padding: 2rem;
         min-height: auto;
@@ -61,9 +320,9 @@
            
         }
     }
-}
+  
 
-
+  }
 
 /* all-animation-is-here */
 

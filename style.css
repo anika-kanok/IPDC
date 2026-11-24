@@ -21,7 +21,7 @@
     background-repeat: no-repeat;
     background-size: 710px 682px;
     background-position: right top;
-    display: relative;
+    position: relative;
     & header{
         display: flex;
         align-items: center;
@@ -279,7 +279,7 @@
     & .ipdc-image {
         width: 100%;
         max-width: 618px;
-        min-height: auto;
+        min-height:610px ;
         & img{
             width: 100%;
             min-height: auto;
